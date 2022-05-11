@@ -4,7 +4,7 @@
 }
 
 .address-content__logo {
-    color: var(--primary-bg-color);
+    color: $primary-bg-color;
     margin-bottom: 20px;
     margin-right: 93px;
     font-family: "Raleway", sans-serif;
@@ -16,7 +16,7 @@
 
 
 .address-content__logo span{
-    color: var(--accent-color);
+    color: $accent-color;
 }
 
 .footer--font {
@@ -36,13 +36,13 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
-.address-content__link :hover,
-.address-content__link :focus {
-   color: var(--accent-color);
+&:hover,
+&:focus {
+   color: $accent-color;
 }
 
 .address-content__text{
-    color: var(--primary-bg-color);
+    color: $primary-bg-color;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -57,7 +57,7 @@
 
 
 .soc__join {
-    color: #ffffff;
+    color: $primary-bg-color;
     font-family: Roboto;
     font-style: bold;
     font-size: 14px;
@@ -91,23 +91,22 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+&:hover, 
+&:focus {
+    background-color: $accent-color;
+}
 
 .soc__icon {
-    fill:#FFFFFF ;
+    fill: $primary-bg-color;
 }
+
+.soc__link:hover & {
+    fill: $primary-bg-color;
+}
+
 .soc__list {
     display:flex;
     align-items: center;  
-}
-
-
-.soc__link:hover, 
-.soc__link:focus {
-    background-color: var(--accent-color);
-}
-
-.soc__link:hover .soc__icon{
-    fill: #FFFFFF;
 }
 
 .subscribe__post {
@@ -115,7 +114,7 @@
 }
 
 .subscribe__join {
-    color: #ffffff;
+    color: $primary-bg-color;
     font-family: Roboto;
     font-style: bold;
     font-size: 14px;
@@ -153,8 +152,8 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
-    background-color: var(--accent-color);
-    color: var(--primary-bg-color);
+    background-color: $accent-color;
+    color: $primary-bg-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: none;
@@ -166,5 +165,5 @@
     top: 50%;
     right: 28px;
     transform: translateY(-50%);
-    fill: #ffffff;
+    fill: $primary-bg-color;
 }

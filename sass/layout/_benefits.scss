@@ -8,7 +8,7 @@
     width: 270px;
 }
 
-.benefits-item:not(:last-child){
+&:not(:last-child){
     margin-right: 30px;
 }
 .benefits-logo-list {
@@ -24,7 +24,7 @@
     align-items: center;
     background-color: #F5F4Fa;
 }
-.benefits-logo-item:not(:first-child){
+&:not(:first-child){
     margin-left: 30px;
 }
 .benefits-title {
@@ -35,7 +35,7 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--title-text-color);
+    color: $title-text-color;
 }
 
 .benefits-text { 
@@ -43,6 +43,6 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--primary-text-color);
+    color: $primary-text-color;
 }
 

@@ -18,14 +18,14 @@
 }
 
 .team-list .title {
-    color: var(--title-text-color);
+    color: $title-text-color;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;     
 }
     
 .team-list .text {
-    color: var(--primary-text-color);
+    color: $primary-text-color;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
@@ -41,7 +41,7 @@
 .team-container {
     padding-top: 30px;
     padding-bottom: 30px;
-    background-color: var(--primary-bg-color);
+    background-color: $primary-bg-color;
 } 
 
 .team-soc-list {
@@ -61,20 +61,22 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+&:hover, 
+&:focus {
+    background-color: $accent-color;
+}
+
 .team-soc-icon {
     fill:#AFB1B8 ;
 }
 
-.team-soc-link:hover, 
-.team-soc-link:focus {
-    background-color: var(--accent-color);
-}
-
-.team-soc-link:hover .team-soc-icon,
-.team-soc-link:focus .team-soc-icon {
-    fill: #FFFFFF;
+.team-soc-link:hover &,
+.team-soc-link:focus & {
+    fill: $primary-bg-color;
 }
 
 .shadow{
-    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+     0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }

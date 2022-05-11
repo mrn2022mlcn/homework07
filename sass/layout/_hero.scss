@@ -21,7 +21,7 @@
 .container__hero-title {
     margin-right: auto;
     margin-left: auto;
-    color: var(--primary-bg-color);
+    color: $primary-bg-color;
     max-width: 700px;
     font-style: normal;
     font-weight: 900;
@@ -42,8 +42,8 @@
     margin-right: auto;
     margin-left: auto;
     font-family: inherit;
-    color: var(--primary-bg-color);
-    background-color: var(--accent-color);
+    color: $primary-bg-color;
+    background-color: $accent-color;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.89;
