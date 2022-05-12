@@ -33,12 +33,26 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+    display: block;
+    position: relative;
+    padding-top: 32px;
+    padding-bottom: 32px; 
+    transition-property: color, background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 &:hover,
 &:focus {
    color: $accent-color;
+   fill: $accent-color;
 }
+
+
+&:not(:last-child) {
+    margin-right: 50px;
+}
+
 .site-nav__item{
     margin-right: 50px;
     
@@ -68,27 +82,6 @@
 .header__contacts {
     margin-left: auto;
 }
-
-.site-nave__link {
-    display: block;
-    position: relative;
-    padding-top: 32px;
-    padding-bottom: 32px; 
-    transition-property: color, background-color, fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-
-&:not(:last-child) {
-    margin-right: 50px;
-}
-
-&:hover,
-&:focus {
-fill: $accent-color;
-}
-
 
 .contacts {
     display: flex;
