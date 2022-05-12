@@ -40,30 +40,29 @@
     transition-property: color, background-color, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-&:hover,
-&:focus {
-   color: $accent-color;
-   fill: $accent-color;
+    &:hover,
+    &:focus {
+    color: $accent-color;
+    fill: $accent-color;
 }
-
 
 &:not(:last-child) {
     margin-right: 50px;
 }
 
+}
+
+
 .site-nav__item{
-    margin-right: 50px;
-    
+    margin-right: 50px; 
 }
 
 .current {
     color: transparent;
-}
 
-&:hover,
-&current:focus {
+    &:hover,
+    &:focus {
     color: $accent-color;
 }
 
@@ -77,6 +76,8 @@
     height: 4px;
     border-radius: 2px;
     background-color: $accent-color;
+}
+
 }
 
 .header__contacts {
@@ -96,15 +97,15 @@
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-&:hover,
-&:focus {
+    &:hover,
+    &:focus {
     fill: $accent-color;
 }
 
-& + & {
+    & + & {
     margin-left: 30px;
+}
 }
 
 .site-contacts__link{
@@ -118,12 +119,14 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-&:hover, 
-&:focus {
+    &:hover, 
+    &:focus {
     color: $accent-color; 
 }
+}
+
+
 
 .site-contacts__mail {
     width: 16px;
