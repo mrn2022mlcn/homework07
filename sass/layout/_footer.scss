@@ -14,7 +14,6 @@
     text-decoration: none;
 }
 
-
 .address-content__logo span{
     color: $accent-color;
 }
@@ -34,11 +33,10 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+    &:hover,
+    &:focus {
+    color: $accent-color;
 }
-
-&:hover,
-&:focus {
-   color: $accent-color;
 }
 
 .address-content__text{
@@ -55,10 +53,9 @@
     margin-top: 9px;
 }
 
-
 .soc__join {
     color: $primary-bg-color;
-    font-family: Roboto;
+    font-family: $font-family;
     font-style: bold;
     font-size: 14px;
     line-height: 1.14;
@@ -70,6 +67,7 @@
 .footer .container{
     display: flex;  
 }
+
 .address-content {
     width:calc(25% - 15px);
 }
@@ -90,18 +88,18 @@
     transition-property: background-color, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-&:hover, 
-&:focus {
+    &:hover, 
+    &:focus {
     background-color: $accent-color;
 }
+}
+
 
 .soc__icon {
     fill: $primary-bg-color;
-}
-
-.soc__link:hover & {
+    .soc__link:hover & {
     fill: $primary-bg-color;
+}
 }
 
 .soc__list {
@@ -115,7 +113,7 @@
 
 .subscribe__join {
     color: $primary-bg-color;
-    font-family: Roboto;
+    font-family: $font-family;
     font-style: bold;
     font-size: 14px;
     line-height: 1.14;
@@ -157,7 +155,6 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: none;
-
 }
 
 .footer-btn__icon-send {
